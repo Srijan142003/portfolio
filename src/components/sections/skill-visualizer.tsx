@@ -6,7 +6,6 @@ import { Loader2, Wand2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { getRecommendedSkills } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -99,13 +98,12 @@ export function SkillVisualizer() {
                 <h3 className="text-center font-headline text-2xl font-bold">My Skills</h3>
                  <div className="mt-4 flex flex-wrap justify-center gap-4">
                     {mySkills.map(skill => (
-                        <Badge 
+                        <div 
                             key={skill}
-                            variant={recommendedSkills.includes(skill) ? 'default' : 'secondary'}
-                            className={`transition-all duration-300 ease-in-out text-lg py-2 px-4 h-12 flex items-center gap-2 hover:scale-110 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : 'scale-100'}`}
+                            className={`transition-all duration-300 ease-in-out hover:scale-110 ${recommendedSkills.includes(skill) ? 'scale-110' : 'scale-100 opacity-60'}`}
                         >
-                            <img src={skillLogos[skill]} alt={`${skill} logo`} className="h-5 w-auto" />
-                        </Badge>
+                            <img src={skillLogos[skill]} alt={`${skill} logo`} className="h-8" />
+                        </div>
                     ))}
                  </div>
               </div>

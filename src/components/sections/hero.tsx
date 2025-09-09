@@ -9,7 +9,7 @@ export function Hero() {
         Srijan Kundu: Machine Learning Engineer
       </h1>
       <p className="mx-auto mt-6 max-w-[700px] text-lg text-foreground/80 md:text-xl">
-        A Computer Science undergraduate with a passion for Machine Learning, seeking opportunities in the field. Enjoys problem-solving, reading, and collaboration.
+        Passionate about machine learning and leveraging Agentive AI for real-world impact. Focused on developing robust backend, ML-driven tools for diverse applications.
       </p>
       <div className="mt-8 flex gap-4">
         <Button asChild size="lg">

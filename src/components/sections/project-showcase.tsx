@@ -31,6 +31,15 @@ const projectsData: Project[] = [
   },
   {
     category: 'AI',
+    title: 'OCR for Medical Applications',
+    description: 'Developed an OCR system with Gemini Flash 2.0 to extract and summarize prescriptions and medical reports. This tool is integrated into a medical application, making healthcare data more accessible and actionable.',
+    image: 'https://picsum.photos/600/400',
+    imageHint: 'text recognition healthcare',
+    tags: ['OCR', 'Python', 'Image Processing', 'Gemini AI'],
+    sourceUrl: 'https://github.com/Srijan142003/OCR-v02',
+  },
+  {
+    category: 'AI',
     title: 'Spam SMS Detection',
     description: 'A Machine Learning model to detect spam SMS messages.',
     image: 'https://picsum.photos/600/400',
@@ -55,15 +64,6 @@ const projectsData: Project[] = [
     imageHint: 'movie posters',
     tags: ['Machine Learning', 'Python'],
     sourceUrl: 'https://github.com/Srijan142003/CODSOFT',
-  },
-  {
-    category: 'AI',
-    title: 'OCR Pipeline',
-    description: 'Implemented and optimized OCR pipelines using image preprocessing techniques to enhance text recognition accuracy.',
-    image: 'https://picsum.photos/600/400',
-    imageHint: 'text recognition',
-    tags: ['OCR', 'Python', 'Image Processing'],
-    sourceUrl: 'https://github.com/Srijan142003/OCR-v02',
   },
   {
     category: 'Web',

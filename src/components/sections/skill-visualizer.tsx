@@ -21,7 +21,7 @@ const FormSchema = z.object({
 });
 
 const staticSkills = [
-  "Machine Learning", "Java (OOP)", "C Programming", "Python", "Shell Script", "SQL", "SAP ABAP using HANA", "MongoDB"
+  "C", "Java", "Python", "TensorFlow", "Numpy", "MongoDB", "SAP NetWeaver", "Flask", "HTML", "Google Colab", "Shell Script", "Oracle Database", "Socket Programming"
 ];
 
 export function SkillVisualizer() {

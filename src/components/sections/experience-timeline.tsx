@@ -5,27 +5,11 @@ import type { Experience } from '@/lib/definitions';
 const experienceData: Experience[] = [
   {
     date: 'Aug 2022 - Jun 2026',
-    title: 'B. Tech Computer Science Engineering',
-    company: 'Kalinga Institute of Industrial Technology, Bhubaneswar',
+    title: 'B. Tech in Computer Science & Engineering',
+    company: 'KIIT Deemed to be University, Bhubaneswar, India',
     description: 'CGPA till 6th Semester: 7.14.',
     image: 'https://picsum.photos/200/200',
     imageHint: 'university campus'
-  },
-  {
-    date: '2022',
-    title: 'CBSE (Class 12)',
-    company: 'Sister Nivedita Public School, Malda',
-    description: 'Scored 75% in Class 12.',
-    image: 'https://picsum.photos/200/200',
-    imageHint: 'school building'
-  },
-  {
-    date: '2020',
-    title: 'CBSE (Class 10)',
-    company: 'Sister Nivedita Public School, Malda',
-    description: 'Scored 85% in Class 10.',
-    image: 'https://picsum.photos/200/200',
-    imageHint: 'school building'
   },
 ];
 

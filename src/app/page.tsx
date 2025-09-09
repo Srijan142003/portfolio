@@ -5,6 +5,7 @@ import { SkillVisualizer } from '@/components/sections/skill-visualizer';
 import { ProjectShowcase } from '@/components/sections/project-showcase';
 import { ExperienceTimeline } from '@/components/sections/experience-timeline';
 import { ContactForm } from '@/components/sections/contact-form';
+import { Certifications } from '@/components/sections/certifications';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <SkillVisualizer />
         <ProjectShowcase />
         <ExperienceTimeline />
+        <Certifications />
         <ContactForm />
       </main>
       <Footer />

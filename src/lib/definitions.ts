@@ -17,3 +17,12 @@ export type Experience = {
   image: string;
   imageHint: string;
 };
+
+export type Certification = {
+    issuer: string;
+    logoUrl: string;
+    title: string;
+    date: string;
+    credentialUrl: string;
+    skills: string[];
+};

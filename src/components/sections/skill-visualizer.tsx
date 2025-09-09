@@ -40,9 +40,6 @@ const CustomTooltip = ({ active, payload }: any) => {
             <span className="font-bold">{data.value}</span>
           </div>
         </div>
-        <div className="mt-2 text-sm">
-            {data.skills.join(', ')}
-        </div>
       </div>
     );
   }

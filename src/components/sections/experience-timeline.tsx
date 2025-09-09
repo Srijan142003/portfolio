@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import type { Experience } from '@/lib/definitions';
+import { Award, School, Briefcase } from 'lucide-react';
 
 const experienceData: Experience[] = [
   {
@@ -18,6 +19,14 @@ const experienceData: Experience[] = [
     description: 'Class 12: 75%, Class 10: 85%',
     image: 'https://picsum.photos/200/200',
     imageHint: 'school building'
+  },
+  {
+    date: '2023-2025',
+    title: 'Professional Certifications',
+    company: 'Coursera',
+    description: 'Courses in Machine Learning, Business Ethics, Corporate Governance, and Advanced System Security.',
+    image: 'https://picsum.photos/200/200',
+    imageHint: 'online learning'
   }
 ];
 
@@ -29,7 +38,7 @@ export function ExperienceTimeline() {
             <div className="text-center">
                 <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Journey</h2>
                 <p className="mx-auto mt-4 max-w-[700px] text-lg text-foreground/80">
-                    A timeline of my educational background.
+                    A timeline of my educational and professional milestones.
                 </p>
             </div>
             <div className="relative mt-12 timeline-container">

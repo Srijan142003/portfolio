@@ -22,7 +22,7 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <DraftingCompass className="h-6 w-6 text-primary" />
-          <span className="font-headline font-bold">Persona Canvas</span>
+          <span className="font-headline font-bold">Srijan</span>
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -46,7 +46,7 @@ export function Header() {
             <SheetContent side="left" className="pr-0">
               <Link href="/" className="flex items-center space-x-2 px-4">
                 <DraftingCompass className="h-6 w-6 text-primary" />
-                <span className="font-headline font-bold">Persona Canvas</span>
+                <span className="font-headline font-bold">Srijan</span>
               </Link>
               <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                 <div className="flex flex-col space-y-3 pt-6">

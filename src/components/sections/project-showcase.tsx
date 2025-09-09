@@ -76,7 +76,7 @@ const projectsData: Project[] = [
   },
 ];
 
-const categories: ('All' | Project['category'])[] = ['All', 'Web', 'AI', 'Mobile'];
+const categories: ('All' | Project['category'])[] = ['All', 'Web', 'AI'];
 
 export function ProjectShowcase() {
   const [activeCategory, setActiveCategory] = useState<'All' | Project['category']>('All');

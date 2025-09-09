@@ -13,6 +13,15 @@ import type { Project } from '@/lib/definitions';
 const projectsData: Project[] = [
   {
     category: 'AI',
+    title: 'Research-AI',
+    description: 'A Python-based project designed to help researchers and students bridge ideas and gaps from research papers across various topics. This project utilizes the Gemini API for advanced language understanding and leverages the CORE research database, providing access to millions of academic papers.',
+    image: 'https://picsum.photos/600/400',
+    imageHint: 'AI research',
+    tags: ['Python', 'Gemini API', 'AI'],
+    liveUrl: 'https://re-ease-search.vercel.app',
+  },
+  {
+    category: 'AI',
     title: 'Spam SMS Detection',
     description: 'A Machine Learning model to detect spam SMS messages.',
     image: 'https://picsum.photos/600/400',

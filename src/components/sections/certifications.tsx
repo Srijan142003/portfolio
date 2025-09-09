@@ -70,7 +70,7 @@ export function Certifications() {
         <section id="certifications" className="py-24 sm:py-32 animate-in fade-in slide-in-from-bottom-16 duration-1000">
             <div className="container">
                 <div className="text-center">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Certifications</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Technical Certifications</h2>
                     <p className="mx-auto mt-4 max-w-[700px] text-lg text-foreground/80">
                         A collection of my professional certifications and qualifications.
                     </p>

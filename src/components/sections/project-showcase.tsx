@@ -13,6 +13,15 @@ import type { Project } from '@/lib/definitions';
 const projectsData: Project[] = [
   {
     category: 'AI',
+    title: 'JUSTICE-FOR-ALL',
+    description: 'A Flask-based web application that allows users to submit legal case descriptions or upload documents for unbiased AI-driven verdict analysis. The backend uses Gemini AI and Indian Kanoon APIs.',
+    image: 'https://picsum.photos/600/400',
+    imageHint: 'legal AI',
+    tags: ['Python', 'Flask', 'Gemini AI', 'Indian Kanoon API'],
+    liveUrl: 'https://justice-for-all.onrender.com',
+  },
+  {
+    category: 'AI',
     title: 'Research-AI',
     description: 'A Python-based project designed to help researchers and students bridge ideas and gaps from research papers across various topics. This project utilizes the Gemini API for advanced language understanding and leverages the CORE research database, providing access to millions of academic papers.',
     image: 'https://picsum.photos/600/400',

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Loader2, Wand2 } from 'lucide-react';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,18 +12,30 @@ import { getRecommendedSkills } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
+const skillLogos: Record<string, string> = {
+  'Java': "https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white",
+  'Python': "https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white",
+  'TensorFlow': "https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white",
+  'Numpy': "https://img.shields.io/badge/Numpy-013243?style=flat-square&logo=numpy&logoColor=white",
+  'MongoDB': "https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white",
+  'SAP NetWeaver': "https://img.shields.io/badge/SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white",
+  'Flask': "https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white",
+  'HTML': "https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white",
+  'Google Colab': "https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=google-colab&logoColor=white",
+  'Shell Script': "https://img.shields.io/badge/Shell-FFD500?style=flat-square&logo=gnu-bash&logoColor=black",
+  'Oracle Database': "https://img.shields.io/badge/Oracle-CC2927?style=flat-square&logo=oracle&logoColor=white",
+  'Socket Programming': "https://img.shields.io/badge/Socket%20Programming-4EAA25?style=flat-square&logo=socket.io&logoColor=white",
+  'C': 'https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white'
+};
+
+const mySkills = Object.keys(skillLogos);
+
 export function SkillVisualizer() {
   const [resumeText, setResumeText] = useState('');
   const [recommendedSkills, setRecommendedSkills] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { toast } = useToast();
-
-  const mySkills = [
-    'C', 'Java', 'Python', 'TensorFlow', 'Numpy', 'MongoDB', 
-    'SAP NetWeaver', 'Flask', 'HTML', 'Google Colab', 'Shell Script', 
-    'Oracle Database', 'Socket Programming'
-  ];
 
   const handleAnalyze = async () => {
     setIsLoading(true);
@@ -90,9 +103,9 @@ export function SkillVisualizer() {
                         <Badge 
                             key={skill}
                             variant={recommendedSkills.includes(skill) ? 'default' : 'secondary'}
-                            className={`transition-all duration-300 text-lg py-2 px-4 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : ''}`}
+                            className={`transition-all duration-300 text-lg py-2 px-4 h-12 flex items-center gap-2 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : ''}`}
                         >
-                            {skill}
+                            <Image src={skillLogos[skill]} alt={`${skill} logo`} width={skill === 'Shell Script' ? 88: 80} height={20} className="h-5 w-auto" />
                         </Badge>
                     ))}
                  </div>

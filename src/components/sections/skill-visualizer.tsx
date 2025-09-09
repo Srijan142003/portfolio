@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Loader2, Wand2 } from 'lucide-react';
-import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -105,7 +104,7 @@ export function SkillVisualizer() {
                             variant={recommendedSkills.includes(skill) ? 'default' : 'secondary'}
                             className={`transition-all duration-300 ease-in-out text-lg py-2 px-4 h-12 flex items-center gap-2 hover:scale-110 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : 'scale-100'}`}
                         >
-                            <Image src={skillLogos[skill]} alt={`${skill} logo`} width={skill === 'Shell Script' ? 88: 80} height={20} className="h-5 w-auto" />
+                            <img src={skillLogos[skill]} alt={`${skill} logo`} className="h-5 w-auto" />
                         </Badge>
                     ))}
                  </div>

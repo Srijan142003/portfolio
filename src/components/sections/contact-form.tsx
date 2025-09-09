@@ -54,7 +54,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="container py-24 sm:py-32 animate-in fade-in slide-in-from-bottom-16 duration-1000">
         <Card className="max-w-2xl mx-auto shadow-lg">
           <CardHeader className="text-center">
             <CardTitle className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Get In Touch</CardTitle>

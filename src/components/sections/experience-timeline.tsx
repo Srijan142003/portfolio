@@ -33,7 +33,7 @@ const experienceData: Experience[] = [
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="bg-muted/50 py-24 sm:py-32">
+    <section id="experience" className="bg-muted/50 py-24 sm:py-32 animate-in fade-in slide-in-from-bottom-16 duration-1000">
         <div className="container">
             <div className="text-center">
                 <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Journey</h2>
@@ -43,8 +43,8 @@ export function ExperienceTimeline() {
             </div>
             <div className="relative mt-12 timeline-container">
                 {experienceData.map((item, index) => (
-                    <div key={index} className={`timeline-item relative w-1/2 p-4 ${index % 2 === 0 ? 'timeline-left left-0 pr-8' : 'timeline-right left-1/2 pl-8'}`}>
-                        <Card className="shadow-md hover:shadow-xl transition-shadow">
+                    <div key={index} className={`timeline-item group relative w-1/2 p-4 ${index % 2 === 0 ? 'timeline-left left-0 pr-8' : 'timeline-right left-1/2 pl-8'}`}>
+                        <Card className="shadow-md transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:-translate-y-1">
                             <CardHeader>
                                 <div className="flex items-center gap-4">
                                     <Image

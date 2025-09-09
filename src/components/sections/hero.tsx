@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center">
+    <section className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center animate-in fade-in slide-in-from-top-16 duration-1000">
       <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
         Srijan Kundu: Machine Learning Engineer
       </h1>

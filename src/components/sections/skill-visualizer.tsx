@@ -60,7 +60,7 @@ export function SkillVisualizer() {
   };
 
   return (
-    <section id="skills" className="bg-muted/50 py-24 sm:py-32">
+    <section id="skills" className="bg-muted/50 py-24 sm:py-32 animate-in fade-in slide-in-from-bottom-16 duration-1000">
       <div className="container">
         <Card className="max-w-4xl mx-auto shadow-lg">
           <CardHeader className="text-center">
@@ -103,7 +103,7 @@ export function SkillVisualizer() {
                         <Badge 
                             key={skill}
                             variant={recommendedSkills.includes(skill) ? 'default' : 'secondary'}
-                            className={`transition-all duration-300 text-lg py-2 px-4 h-12 flex items-center gap-2 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : ''}`}
+                            className={`transition-all duration-300 ease-in-out text-lg py-2 px-4 h-12 flex items-center gap-2 hover:scale-110 ${recommendedSkills.includes(skill) ? 'scale-110 shadow-lg' : 'scale-100'}`}
                         >
                             <Image src={skillLogos[skill]} alt={`${skill} logo`} width={skill === 'Shell Script' ? 88: 80} height={20} className="h-5 w-auto" />
                         </Badge>

@@ -86,7 +86,7 @@ export function ProjectShowcase() {
     : projectsData.filter(p => p.category === activeCategory);
 
   return (
-    <section id="projects" className="container py-24 sm:py-32">
+    <section id="projects" className="container py-24 sm:py-32 animate-in fade-in slide-in-from-bottom-16 duration-1000">
       <div className="text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Project Showcase</h2>
         <p className="mx-auto mt-4 max-w-[700px] text-lg text-foreground/80">
@@ -107,8 +107,12 @@ export function ProjectShowcase() {
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filteredProjects.map((project) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-all hover:shadow-xl">
+        {filteredProjects.map((project, index) => (
+          <Card 
+            key={project.title} 
+            className="group flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 animate-in fade-in"
+            style={{animationDelay: `${index * 150}ms`}}
+          >
             <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                     <Image

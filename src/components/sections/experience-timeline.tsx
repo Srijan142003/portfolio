@@ -11,6 +11,14 @@ const experienceData: Experience[] = [
     image: 'https://picsum.photos/200/200',
     imageHint: 'university campus'
   },
+  {
+    date: 'Completed 2022',
+    title: 'High School Education (CBSE)',
+    company: 'Sister Nivedita Public School, Malda',
+    description: 'Class 12: 75%, Class 10: 85%',
+    image: 'https://picsum.photos/200/200',
+    imageHint: 'school building'
+  }
 ];
 
 

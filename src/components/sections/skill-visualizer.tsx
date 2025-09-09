@@ -21,7 +21,7 @@ const FormSchema = z.object({
 });
 
 const staticSkills = [
-  "React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Python", "UI/UX Design", "Figma", "Firebase", "GenAI"
+  "Machine Learning", "Java (OOP)", "C Programming", "Python", "Shell Script", "SQL", "SAP ABAP using HANA", "MongoDB"
 ];
 
 export function SkillVisualizer() {

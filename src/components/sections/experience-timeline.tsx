@@ -4,28 +4,28 @@ import type { Experience } from '@/lib/definitions';
 
 const experienceData: Experience[] = [
   {
-    date: '2021 - Present',
-    title: 'Senior Frontend Developer',
-    company: 'Tech Solutions Inc.',
-    description: 'Led the development of a new design system and component library in React and TypeScript, improving developer productivity by 30%. Mentored junior developers and conducted code reviews.',
-    image: 'https://picsum.photos/200/200',
-    imageHint: 'office building'
-  },
-  {
-    date: '2019 - 2021',
-    title: 'Full-Stack Developer',
-    company: 'Innovate Co.',
-    description: 'Developed and maintained client-facing web applications using the MERN stack. Collaborated with product managers and designers to deliver high-quality features.',
-    image: 'https://picsum.photos/200/200',
-    imageHint: 'startup office'
-  },
-  {
-    date: '2015 - 2019',
-    title: 'Bachelor of Science in Computer Science',
-    company: 'University of Technology',
-    description: 'Graduated with honors, focusing on software engineering and artificial intelligence. President of the university coding club.',
+    date: 'Aug 2022 - Jun 2026',
+    title: 'B. Tech Computer Science Engineering',
+    company: 'Kalinga Institute of Industrial Technology, Bhubaneswar',
+    description: 'CGPA till 6th Semester: 7.14.',
     image: 'https://picsum.photos/200/200',
     imageHint: 'university campus'
+  },
+  {
+    date: '2022',
+    title: 'CBSE (Class 12)',
+    company: 'Sister Nivedita Public School, Malda',
+    description: 'Scored 75% in Class 12.',
+    image: 'https://picsum.photos/200/200',
+    imageHint: 'school building'
+  },
+  {
+    date: '2020',
+    title: 'CBSE (Class 10)',
+    company: 'Sister Nivedita Public School, Malda',
+    description: 'Scored 85% in Class 10.',
+    image: 'https://picsum.photos/200/200',
+    imageHint: 'school building'
   },
 ];
 
@@ -37,7 +37,7 @@ export function ExperienceTimeline() {
             <div className="text-center">
                 <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Journey</h2>
                 <p className="mx-auto mt-4 max-w-[700px] text-lg text-foreground/80">
-                    A timeline of my professional experience and educational background.
+                    A timeline of my educational background.
                 </p>
             </div>
             <div className="relative mt-12 timeline-container">

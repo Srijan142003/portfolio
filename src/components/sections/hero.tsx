@@ -6,12 +6,10 @@ export function Hero() {
   return (
     <section className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center">
       <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-        John Doe: Creative Developer
+        Srijan Kundu: Machine Learning Engineer
       </h1>
       <p className="mx-auto mt-6 max-w-[700px] text-lg text-foreground/80 md:text-xl">
-        I build beautiful, responsive, and user-friendly web applications.
-        Specializing in modern frontend technologies and turning ideas into
-        digital reality.
+        A Computer Science undergraduate with a passion for Machine Learning, seeking opportunities in the field. Enjoys problem-solving, reading, and collaboration.
       </p>
       <div className="mt-8 flex gap-4">
         <Button asChild size="lg">
